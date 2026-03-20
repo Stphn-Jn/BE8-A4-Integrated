@@ -19,7 +19,6 @@ This project provides the full design files for an 8-bit TTL-based computer. Unl
 ```text
 ├── Simulation/          # Proteus project files and logic testing
 ├── Hardware/            # KiCad schematics, PCB layouts, and Footprints
-├── Firmware/            # Arduino sketches for EEPROM microcode programming
 ├── Documentation/       # Datasheets for 74-series ICs used
 └── README.md
 ```
@@ -34,6 +33,9 @@ This project provides the full design files for an 8-bit TTL-based computer. Unl
 | **Control Logic** | EEPROM-based (28C16) microcode |
 | **Display** | Triple 7-segment output for decimal/hex viewing |
 
+## Microcode Programming
+The EEPROM microcode is flashed using an Arduino Nano. You can find the source code and flashing scripts in the **[Arduino EEPROM Programmer Repository](https://github.com/beneater/eeprom-programmer/tree/master)**.
+
 ## Tools Used
 * **Simulation:** Proteus Design Suite
 * **PCB Design:** KiCad EDA
@@ -45,4 +47,4 @@ This project provides the full design files for an 8-bit TTL-based computer. Unl
 3. **Program:** Use the provided Assembly examples and EEPROM flashing scripts to load instructions into the system memory.
 
 ---
-*Developed by Calista as a 4th-year Computer Engineering project.*
+*Developed by Stephen-Jn as a 4th-year Computer Engineering project.*
